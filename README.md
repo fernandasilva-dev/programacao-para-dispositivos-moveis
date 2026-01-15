@@ -1,144 +1,148 @@
-📱 Navegação Avançada e UX no React Native
-📌 Descrição do Projeto
+# 📱 Navegação Avançada e UX no React Native
 
-Este projeto foi desenvolvido em React Native, utilizando Expo, com o objetivo de aplicar navegação avançada e boas práticas de UX (User Experience).
+## 📌 Descrição do Projeto
 
-O aplicativo utiliza Bottom Tabs e Stack Navigator, tratando corretamente os estados de Loading, Empty e Error, garantindo que nenhuma tela fique em branco.
-Além disso, foi configurado Deep Linking, permitindo acessar diretamente a tela de detalhes por meio de uma URL.
+Este projeto foi desenvolvido em **React Native**, utilizando **Expo**, com o objetivo de aplicar **navegação avançada** e **boas práticas de UX (User Experience)**.
 
-🚀 Tecnologias Utilizadas
+O aplicativo utiliza **Bottom Tabs** e **Stack Navigator**, trata corretamente os estados de **Loading**, **Empty** e **Error**, garantindo que nenhuma tela fique em branco.
+Também foi configurado **Deep Linking**, permitindo acessar diretamente a tela de detalhes por meio de uma URL.
 
-React Native
+---
 
-Expo
+## 🚀 Tecnologias Utilizadas
 
-React Navigation
+* React Native
+* Expo
+* React Navigation
+* JavaScript
 
-JavaScript
+---
 
-📥 Clonando o Repositório
+## 📥 Clonando o Repositório
 
 No terminal, execute:
 
+```bash
 git clone https://github.com/SEU_USUARIO/navegacao-ux.git
+```
 
+Em seguida, acesse a pasta do projeto:
 
-Entre na pasta do projeto:
-
+```bash
 cd navegacao-ux
+```
 
-📦 Instalando as Dependências
+---
 
-Após clonar o repositório, instale todas as dependências do projeto com apenas um comando:
+## 📦 Instalando as Dependências
 
+Após clonar o repositório, instale **todas as dependências** com apenas um comando:
+
+```bash
 npm install
+```
 
+📌 Todas as bibliotecas necessárias já estão listadas no arquivo `package.json`.
+Não é necessário instalar dependências manualmente.
 
-📌 Todas as bibliotecas necessárias já estão listadas no arquivo package.json, portanto não é necessário instalar dependências manualmente.
+---
 
-▶️ Executando o Projeto
+## ▶️ Executando o Projeto
 
-Para iniciar o aplicativo:
+Para iniciar o aplicativo, utilize o comando:
 
+```bash
 npx expo start
+```
 
+Após iniciar, abra o app utilizando:
 
-Abra o app utilizando:
+* 📱 **Expo Go (celular)**
+  ou
+* 🤖 **Emulador Android**
 
-Expo Go (celular)
-ou
+---
 
-Emulador Android
+## 🧭 Estrutura de Navegação
 
-🧭 Estrutura de Navegação
+A navegação do aplicativo segue a estrutura abaixo:
 
-A navegação do aplicativo segue a seguinte estrutura:
-
+```text
 Tabs
 ├── Home (Stack)
 │   ├── Home
 │   └── Details
 └── Profile
+```
 
-📌 Navegadores Utilizados
+### 📌 Navegadores Utilizados
 
-NavigationContainer
+* `NavigationContainer`
+* `Bottom Tab Navigator`
+* `Stack Navigator`
 
-Bottom Tab Navigator
+A aba **Home** possui um **Stack interno**, permitindo a navegação entre as telas **Home** e **Details**.
 
-Stack Navigator
+---
 
-A aba Home possui um Stack interno, permitindo a navegação entre as telas Home e Details.
+## 🖥️ Telas do Aplicativo
 
-🖥️ Telas do Aplicativo
-🏠 Tela Home
-
-Funcionalidades:
-
-Exibe um título
-
-Simula carregamento de dados
-
-Trata os estados:
-
-Loading (carregando dados)
-
-Empty (nenhum dado encontrado)
-
-Possui botão para navegação até a tela Details
-
-Nenhuma tela permanece em branco durante o uso.
-
-📄 Tela Details
+### 🏠 Tela Home
 
 Funcionalidades:
 
-Recebe um parâmetro (id) via navegação
+* Exibe um título
+* Simula carregamento de dados
+* Trata os estados:
 
-Simula carregamento de dados
+  * **Loading** (carregando dados)
+  * **Empty** (nenhum dado encontrado)
+* Possui botão para navegação até a tela **Details**
 
-Simula erro de carregamento
+✔ Nenhuma tela permanece em branco.
 
-Trata os estados:
+---
 
-Loading
+### 📄 Tela Details
 
-Error
+Funcionalidades:
 
-Possui botão “Tentar novamente”
+* Recebe um parâmetro (`id`) via navegação
+* Simula carregamento de dados
+* Simula erro de carregamento
+* Trata os estados:
+
+  * **Loading**
+  * **Error**
+* Possui botão **“Tentar novamente”**
 
 O valor do parâmetro recebido é exibido na tela.
 
-👤 Tela Profile
+---
+
+### 👤 Tela Profile
 
 Funcionalidades:
 
-Apresenta informações simuladas do usuário
+* Apresenta informações simuladas do usuário
+* Exemplos de dados exibidos:
 
-Exemplo de dados exibidos:
+  * Nome
+  * Email
+  * Curso
+  * Status
 
-Nome
+Essa tela possui caráter demonstrativo e melhora a experiência do usuário.
 
-Email
+---
 
-Curso
+## 🎯 Boas Práticas de UX Aplicadas
 
-Status
+* Nenhuma tela fica em branco
+* Tratamento explícito de:
 
-Essa tela tem caráter demonstrativo e contribui para a experiência do usuário.
-
-🎯 Boas Práticas de UX Aplicadas
-
-Nenhuma tela fica em branco
-
-Tratamento explícito de:
-
-Loading
-
-Empty
-
-Error
-
-Mensagens claras para o usuário
-
-Botões de ação para recuperação de erro
+  * **Loading**
+  * **Empty**
+  * **Error**
+* Mensagens claras para o usuário
+* Botões de ação para recuperação de erro
