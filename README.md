@@ -5,7 +5,6 @@
 Este projeto foi desenvolvido em **React Native**, utilizando **Expo**, com o objetivo de aplicar **navegação avançada** e **boas práticas de UX (User Experience)**.
 
 O aplicativo utiliza **Bottom Tabs** e **Stack Navigator**, trata corretamente os estados de **Loading**, **Empty** e **Error**, garantindo que nenhuma tela fique em branco.
-Também foi configurado **Deep Linking**, permitindo acessar diretamente a tela de detalhes por meio de uma URL.
 
 ---
 
