@@ -41,9 +41,6 @@ Após clonar o repositório, instale **todas as dependências** com apenas um co
 npm install
 ```
 
-📌 Todas as bibliotecas necessárias já estão listadas no arquivo `package.json`.
-Não é necessário instalar dependências manualmente.
-
 ---
 
 ## ▶️ Executando o Projeto
