@@ -22,7 +22,7 @@ O aplicativo utiliza **Bottom Tabs** e **Stack Navigator**, trata corretamente o
 No terminal, execute:
 
 ```bash
-git clone https://github.com/SEU_USUARIO/navegacao-ux.git
+git clone https://github.com/fernandasilva-dev/programacao-para-dispositivos-moveis.git
 ```
 
 Em seguida, acesse a pasta do projeto:
