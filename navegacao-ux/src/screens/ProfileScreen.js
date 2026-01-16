@@ -4,7 +4,7 @@ export default function ProfileScreen() {
   const user = {
     name: 'Maria Fernanda',
     email: 'maria.fernanda@email.com',
-    course: 'Programação para Dispositivos Móveis',
+    course: 'ADS',
     status: 'Ativo'
   };
 
